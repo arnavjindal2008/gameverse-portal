@@ -14,21 +14,11 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #050510;
   color: #e0e0e0;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
-}
-
-/* ===== Scrollbar ===== */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background: #00e0ff;
-  border-radius: 10px;
+  color:#00E0FF
 }
 
 /* ===========================================
@@ -40,7 +30,6 @@ header {
   align-items: center;
   padding: 18px 50px;
   background: rgba(10, 10, 20, 0.85);
-  backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(0, 255, 255, 0.25);
   position: sticky;
   top: 0;
@@ -63,13 +52,72 @@ header {
   margin-left: 25px;
   color: #bbb;
   font-weight: 500;
-  transition: 0.3s ease;
 }
 
 .navbar a:hover,
 .navbar a.active {
   color: #00e0ff;
   text-shadow: 0 0 10px #00e0ff;
+}
+
+/* ===== Login / Signup Section ===== */
+.auth-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle at center, #0d0d0d, #050505);
+  color: #fff;
+}
+
+.auth-section h2 {
+  font-size: 2.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00eaff;
+  text-shadow: 0 0 15px #00eaff;
+}
+
+.auth-section p {
+  color: #aaa;
+  margin: 15px 0 40px;
+  font-size: 1.1rem;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.auth-btn {
+  margin-top: 30px;
+  background: #00e0ff;
+  color: #0a0a0f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #00e0ff;
+}
+
+.auth-btn:hover {
+  background: transparent;
+  color: #00e0ff;
+  box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
+}
+
+.auth-btn.secondary {
+  background: transparent;
+  color: #00e0ff;
+  box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
+}
+.auth-image img {
+  width: 320px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #00eaff;
+}
+input{
+  width: 100%;
 }
 
 /* ===========================================
@@ -107,7 +155,6 @@ header {
   border-radius: 30px;
   font-weight: 600;
   text-transform: uppercase;
-  transition: 0.3s ease;
   box-shadow: 0 0 15px #00e0ff;
 }
 
@@ -115,62 +162,6 @@ header {
   background: transparent;
   color: #00e0ff;
   box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
-}
-/* ===== Login / Signup Section ===== */
-.auth-section {
-  text-align: center;
-  padding: 80px 20px;
-  background: radial-gradient(circle at center, #0d0d0d, #050505);
-  color: #fff;
-}
-
-.auth-section h2 {
-  font-size: 2.5rem;
-  font-family: 'Orbitron', sans-serif;
-  color: #00eaff;
-  text-shadow: 0 0 15px #00eaff;
-}
-
-.auth-section p {
-  color: #aaa;
-  margin: 15px 0 40px;
-  font-size: 1.1rem;
-}
-
-.auth-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-bottom: 50px;
-}
-
-.auth-btn {
-  background: #00eaff;
-  color: #000;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
-  box-shadow: 0 0 15px #00eaff;
-}
-
-.auth-btn:hover {
-  background: #111;
-  color: #00eaff;
-  box-shadow: 0 0 25px #00eaff;
-}
-
-.auth-btn.secondary {
-  background: transparent;
-  border: 2px solid #00eaff;
-}
-
-.auth-image img {
-  width: 320px;
-  margin-top: 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 25px #00eaff;
 }
 
 /* ===========================================
@@ -202,12 +193,10 @@ header {
   border-radius: 15px;
   padding: 25px;
   width: 280px;
-  transition: 0.3s ease;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
 }
 
 .card:hover {
-  transform: translateY(-10px);
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
 }
 
@@ -228,7 +217,6 @@ header {
   padding: 8px 18px;
   border-radius: 20px;
   font-weight: 600;
-  transition: 0.3s;
 }
 
 .btn-small:hover {
@@ -253,24 +241,26 @@ header {
   margin-bottom: 40px;
 }
 
-.games-grid {
+.games-grid{
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
+  align-items: center;
+  gap: 50px
 }
 
 .game-card {
-  width: 280px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(0, 255, 255, 0.2);
   border-radius: 15px;
   padding: 20px;
-  transition: 0.3s;
+  max-width: 280px;
+  min-width: 280px;
+  max-height: 600px;
+  min-height: 600px;
 }
 
 .game-card:hover {
-  transform: translateY(-10px);
   box-shadow: 0 0 25px #00e0ff;
 }
 
@@ -284,7 +274,7 @@ header {
   color: #fff;
 }
 .games-section h2{
-    font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
   color: #00e0ff;
   margin-bottom: 20px;
@@ -294,11 +284,82 @@ header {
     text-align: center;
 }
 .hero-content h1{
-    font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
   color: #00e0ff;
   margin-bottom: 20px;
   text-shadow: 0 0 15px #00e0ff;
+}
+
+/* ===== LEADERBOARD ===== */
+.leaderboard-section {
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  background: radial-gradient(circle at center, #050505 0%, #000 100%);
+}
+
+.leaderboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 242, 0.25);
+}
+
+.leaderboard-section h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: #00e0ff;
+  text-shadow: 0 0 15px #00e0ff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.leaderboard-table th {
+  color: #00e0ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.leaderboard-table tr:hover {
+  background: rgba(0, 255, 242, 0.1);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #00e0ff;
+}
+/* ===== FOOTER ===== */
+footer {
+  background: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+  border-top: 1px solid rgba(0, 255, 242, 0.25);
+  font-size: 0.9rem;
 }
 
 /* ===========================================
@@ -375,7 +436,7 @@ header {
   text-shadow: 0 0 15px #00e0ff;  
 }
 .about-text h2{
-    font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
   color: #00e0ff;
   margin-bottom: 20px;
@@ -388,11 +449,10 @@ header {
 }
 
 .about-image img {
-  width: 90%;
-  max-width: 350px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
 }
-
 
 /* ===========================================
    CONTACT PAGE
@@ -426,9 +486,10 @@ header {
 
 .contact-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 40px;
   justify-content: center;
+  align-items: center;
 }
 
 .contact-info, .contact-form {
@@ -436,8 +497,11 @@ header {
   border: 1px solid rgba(0, 255, 255, 0.2);
   border-radius: 15px;
   padding: 30px;
-  width: 350px;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  max-height: 460px;
+  min-height: 460px;
+  min-width: 350px;
+  max-width: 350px;
 }
 
 .contact-info h2,
@@ -459,8 +523,7 @@ header {
   font-size: 0.9rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input,.contact-form textarea {
   width: 100%;
   background: #0a0a0f;
   border: 1px solid #00e0ff;
@@ -471,8 +534,7 @@ header {
   font-size: 0.95rem;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
+.contact-form input::placeholder,.contact-form textarea::placeholder {
   color: #888;
 }
 
@@ -496,21 +558,7 @@ footer {
 /* ===========================================
    RESPONSIVE DESIGN
    =========================================== */
-@media (max-width: 992px) {
-  .navbar a {
-    margin-left: 15px;
-  }
 
-  .option-cards, .games-grid, .contact-container {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 20px;
-  }
 
   .logo {
     font-size: 1.4rem;
@@ -531,32 +579,14 @@ footer {
     font-size: 2rem;
   }
 
-  .option-cards,
-  .games-grid,
-  .contact-container {
-    flex-direction: column;
+  .option-cards,.games-grid,.contact-container {
+    flex-direction: row;
     align-items: center;
   }
 
-  .card, .game-card, .contact-info, .contact-form {
+  .card,.game-card,.contact-info,.contact-form {
     width: 90%;
   }
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 1.7rem;
-  }
-
-  .btn {
-    padding: 8px 20px;
-    font-size: 0.85rem;
-  }
-
-  .options h2, .games-section h1, .about-section h1 {
-    font-size: 1.6rem;
-  }
-}
 
 .auth-page {
   min-height: 90vh;
@@ -612,7 +642,6 @@ footer {
   color: #fff;
   font-size: 1rem;
   outline: none;
-  transition: all 0.3s ease;
 }
 
 .auth-form input:focus {
@@ -620,145 +649,3 @@ footer {
   box-shadow: 0 0 12px #00e0ff;
 }
 
-.auth-btn {
-  background: linear-gradient(90deg, #00fff2, #0077ff);
-  border: none;
-  color: #000;
-  font-weight: 600;
-  border-radius: 10px;
-  padding: 12px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 10px;
-  transition: all 0.3s ease;
-}
-
-.auth-btn:hover {
-  background: linear-gradient(90deg, #0077ff, #00fff2);
-  transform: scale(1.05);
-  box-shadow: 0 0 18px #00e0ff;
-}
-
-.alt-link,
-.switch-link {
-  margin-top: 20px;
-  font-size: 0.9rem;
-  color: #aaa;
-  text-align: center;
-}
-
-.alt-link a,
-.switch-link a {
-  color: #00e0ff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.alt-link a:hover,
-.switch-link a:hover {
-  text-decoration: underline;
-}
-
-/* ===== LEADERBOARD ===== */
-.leaderboard-section {
-  padding: 100px 20px;
-  text-align: center;
-  color: #fff;
-  background: radial-gradient(circle at center, #050505 0%, #000 100%);
-}
-
-.leaderboard-container {
-  max-width: 900px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 20px;
-  padding: 40px 20px;
-  box-shadow: 0 0 25px rgba(0, 255, 242, 0.25);
-  backdrop-filter: blur(8px);
-}
-
-.leaderboard-section h2 {
-  font-family: "Orbitron", sans-serif;
-  font-size: 2rem;
-  color: #00e0ff;
-  text-shadow: 0 0 15px #00e0ff;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  color: #bbb;
-  margin-bottom: 25px;
-}
-
-.leaderboard-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-.leaderboard-table th,
-.leaderboard-table td {
-  padding: 12px;
-  text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.leaderboard-table th {
-  color: #00e0ff;
-  font-family: "Orbitron", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
-
-.leaderboard-table tr:hover {
-  background: rgba(0, 255, 242, 0.1);
-  transition: 0.3s;
-}
-
-.avatar {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 8px;
-  border: 2px solid #00e0ff;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: rgba(0, 0, 0, 0.85);
-  text-align: center;
-  padding: 20px;
-  color: #ccc;
-  border-top: 1px solid rgba(0, 255, 242, 0.25);
-  font-size: 0.9rem;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    padding: 15px;
-  }
-
-  .navbar a {
-    display: inline-block;
-    margin: 8px;
-  }
-
-  .auth-container {
-    width: 90%;
-    padding: 30px 20px;
-  }
-
-  .leaderboard-container {
-    width: 95%;
-    padding: 25px 10px;
-  }
-
-  .leaderboard-table th,
-  .leaderboard-table td {
-    font-size: 0.9rem;
-  }
-}
