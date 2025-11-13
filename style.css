@@ -291,7 +291,10 @@ input{
   text-shadow: 0 0 15px #00e0ff;
 }
 
-/* ===== LEADERBOARD ===== */
+/* ===========================================
+ LEADERBOARD
+=========================================== */
+
 .leaderboard-section {
   padding: 100px 20px;
   text-align: center;
@@ -352,7 +355,16 @@ input{
   margin-right: 10px;
   border: 2px solid #00e0ff;
 }
-/* ===== FOOTER ===== */
+
+#sub{
+  font-size: 20px;
+  gap: 20px
+}
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+   
 footer {
   background: rgba(0, 0, 0, 0.85);
   text-align: center;
