@@ -656,3 +656,17 @@ footer {
   box-shadow: 0 0 12px #00e0ff;
 }
 
+@media screen and (max-width: 450px){
+  .contact-container,.games-grid{
+    display: inline-block;
+    margin: auto;
+  }
+  .contact-info,.contact-form,.game-card{
+    margin-bottom: 40px;
+  }
+  .game-card{
+  max-width: 300px;
+  min-width: 300px;
+  }
+}
+
