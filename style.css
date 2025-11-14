@@ -4,6 +4,7 @@
    =========================================== */
 
 /* ===== Global Settings ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@ a {
 /* ===========================================
    HEADER & NAVBAR
    =========================================== */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -38,29 +40,157 @@ header {
 
 .logo {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #00e0ff;
   text-shadow: 0 0 12px #00e0ff;
+  margin-bottom: 10px;
 }
 
 .logo span {
   color: #fff;
 }
 
+ .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 .navbar a {
   margin-left: 25px;
   color: #bbb;
   font-weight: 500;
+  margin: 8px;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover,.navbar a.active {
   color: #00e0ff;
   text-shadow: 0 0 10px #00e0ff;
 }
 
+#sub{
+  font-size: 20px;
+  gap: 20px;
+}
+
 /* ===== Login / Signup Section ===== */
+
+.auth-page {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 50px 40px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 242, 0.25);
+  backdrop-filter: blur(8px);
+  color: #aaa;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.auth-container h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: #00e0ff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 12px #00e0ff;
+}
+
+.auth-btn {
+  margin-top: 30px;
+  background: #00e0ff;
+  color: #0a0a0f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #00e0ff;
+}
+
+.auth-btn:hover {
+  background: transparent;
+  color: #00e0ff;
+  box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
+}
+
+.auth-btn.secondary {
+  background: transparent;
+  color: #00e0ff;
+  box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.auth-form label {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+}
+
+.auth-form input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #00e0ff;
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.auth-form input:focus {
+  border-color: #00e0ff;
+  box-shadow: 0 0 12px #00e0ff;
+}
+
+.alt-link{
+  color: white;
+  text-align: center;
+}
+
+/* ===========================================
+   HERO SECTION (Home Page)
+   =========================================== */
+
+.hero {
+  background: linear-gradient(135deg, #000, #001a33);
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 20px #00e0ff;
+  font-size: 2rem;
+}
+
+.hero h1 span {
+  color: #00e0ff;
+}
+
+.hero p {
+  color: #b0b0b0;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
 .auth-section {
   text-align: center;
   padding: 80px 20px;
@@ -88,64 +218,6 @@ header {
   margin-bottom: 50px;
 }
 
-.auth-btn {
-  margin-top: 30px;
-  background: #00e0ff;
-  color: #0a0a0f;
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  box-shadow: 0 0 15px #00e0ff;
-}
-
-.auth-btn:hover {
-  background: transparent;
-  color: #00e0ff;
-  box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
-}
-
-.auth-btn.secondary {
-  background: transparent;
-  color: #00e0ff;
-  box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
-}
-.auth-image img {
-  width: 320px;
-  margin-top: 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 25px #00eaff;
-}
-input{
-  width: 100%;
-}
-
-/* ===========================================
-   HERO SECTION (Home Page)
-   =========================================== */
-.hero {
-  background: linear-gradient(135deg, #000, #001a33);
-  padding: 120px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 3rem;
-  color: #fff;
-  text-shadow: 0 0 20px #00e0ff;
-}
-
-.hero h1 span {
-  color: #00e0ff;
-}
-
-.hero p {
-  color: #b0b0b0;
-  margin-top: 15px;
-  font-size: 1.1rem;
-}
-
 .btn {
   display: inline-block;
   margin-top: 30px;
@@ -165,69 +237,9 @@ input{
 }
 
 /* ===========================================
-   OPTIONS SECTION (Home Page)
-   =========================================== */
-.options {
-  text-align: center;
-  padding: 80px 40px;
-}
-
-.options h2 {
-  font-family: 'Orbitron', sans-serif;
-  color: #00e0ff;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  text-shadow: 0 0 12px #00e0ff;
-}
-
-.option-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 255, 0.25);
-  border-radius: 15px;
-  padding: 25px;
-  width: 280px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
-}
-
-.card:hover {
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
-}
-
-.card h3 {
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #aaa;
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
-
-.btn-small {
-  background: #00e0ff;
-  color: #0a0a0f;
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-weight: 600;
-}
-
-.btn-small:hover {
-  background: transparent;
-  color: #00e0ff;
-  box-shadow: 0 0 15px #00e0ff;
-}
-
-/* ===========================================
    GAMES PAGE
    =========================================== */
+
 .games-section {
   padding: 80px 40px;
   text-align: center;
@@ -243,6 +255,7 @@ input{
 
 .games-grid{
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
@@ -268,11 +281,11 @@ input{
   width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
+  min-height: 185px;
+  max-height: 185px;
+  box-sizing: border-box;
 }
 
-.game-card h3 {
-  color: #fff;
-}
 .games-section h2{
   font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
@@ -280,15 +293,39 @@ input{
   margin-bottom: 20px;
   text-shadow: 0 0 15px #00e0ff;
 }
+
+.games-section h3{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00e0ff;
+}
+
 .page-hero{
     text-align: center;
 }
+
 .hero-content h1{
   font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
   color: #00e0ff;
   margin-bottom: 20px;
   text-shadow: 0 0 15px #00e0ff;
+}
+
+.btn-small {
+  background: #00e0ff;
+  color: #0a0a0f;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.btn-small:hover {
+  background: transparent;
+  color: #00e0ff;
+  box-shadow: 0 0 15px #00e0ff;
 }
 
 /* ===========================================
@@ -330,8 +367,7 @@ input{
   margin-top: 20px;
 }
 
-.leaderboard-table th,
-.leaderboard-table td {
+.leaderboard-table th,.leaderboard-table td {
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -357,21 +393,9 @@ input{
 }
 
 /* ===========================================
-   FOOTER
-   =========================================== */
-   
-footer {
-  background: rgba(0, 0, 0, 0.85);
-  text-align: center;
-  padding: 20px;
-  color: #ccc;
-  border-top: 1px solid rgba(0, 255, 242, 0.25);
-  font-size: 0.9rem;
-}
-
-/* ===========================================
    ABOUT PAGE
    =========================================== */
+
 .about-section {
   padding: 80px 40px;
   text-align: center;
@@ -435,6 +459,7 @@ footer {
   line-height: 1.7;
   font-size: 1.05rem;
 }
+
 .creator-section h2{
   font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
@@ -442,6 +467,7 @@ footer {
   margin-bottom: 20px;
   text-shadow: 0 0 15px #00e0ff;  
 }
+
 .about-text h2{
   font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
@@ -449,6 +475,7 @@ footer {
   margin-bottom: 20px;
   text-shadow: 0 0 15px #00e0ff;
 }
+
 .about-image {
   display: flex;
   justify-content: center;
@@ -464,6 +491,7 @@ footer {
 /* ===========================================
    CONTACT PAGE
    =========================================== */
+
 .contact-hero {
   background: linear-gradient(120deg, #001f3f, #000);
   padding: 100px 20px;
@@ -493,6 +521,7 @@ footer {
 
 .contact-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   gap: 40px;
   justify-content: center;
@@ -511,8 +540,7 @@ footer {
   max-width: 350px;
 }
 
-.contact-info h2,
-.contact-form h2 {
+.contact-info h2,.contact-form h2 {
   color: #00e0ff;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 15px;
@@ -552,6 +580,7 @@ footer {
 /* ===========================================
    FOOTER
    =========================================== */
+
 footer {
   text-align: center;
   padding: 25px;
@@ -566,96 +595,6 @@ footer {
    RESPONSIVE DESIGN
    =========================================== */
 
-
-  .logo {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-  }
-
-  .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .navbar a {
-    margin: 8px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .option-cards,.games-grid,.contact-container {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .card,.game-card,.contact-info,.contact-form {
-    width: 90%;
-  }
-
-.auth-page {
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
-}
-
-.auth-container {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 20px;
-  padding: 50px 40px;
-  max-width: 420px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 0 25px rgba(0, 255, 242, 0.25);
-  backdrop-filter: blur(8px);
-}
-
-.auth-container h2 {
-  font-family: "Orbitron", sans-serif;
-  font-size: 2rem;
-  color: #00e0ff;
-  margin-bottom: 15px;
-  text-shadow: 0 0 12px #00e0ff;
-}
-
-.auth-container .subtitle {
-  color: #aaa;
-  margin-bottom: 25px;
-  font-size: 0.95rem;
-}
-
-.auth-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  text-align: left;
-}
-
-.auth-form label {
-  color: #ccc;
-  font-size: 0.9rem;
-  margin-bottom: 3px;
-}
-
-.auth-form input {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #00e0ff;
-  border-radius: 8px;
-  padding: 12px;
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-}
-
-.auth-form input:focus {
-  border-color: #00e0ff;
-  box-shadow: 0 0 12px #00e0ff;
-}
-
 @media screen and (max-width: 450px){
   .contact-container,.games-grid{
     display: inline-block;
@@ -664,6 +603,7 @@ footer {
     align-items: center;
     justify-content: center;
   }
+
   .contact-info,.contact-form,.game-card{
     margin-bottom: 40px;
     max-width: fit-content;
@@ -672,6 +612,7 @@ footer {
     box-sizing: border-box;
     min-height: fit-content;
   }
+
   .game-card{
   max-width: 300px;
   min-width: 300px;
