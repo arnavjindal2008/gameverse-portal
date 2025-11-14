@@ -1,103 +1,96 @@
-# 🎮 GameVerse Portal
+🎮 GameVerse Portal
 
-Welcome to **GameVerse Portal** — a futuristic gaming-themed website designed to bring gamers together to explore, play, and connect.  
-This project is part of the **SNW Capstone Project** under the guidance of **Ajay Sharma Sir**, developed by **Arnav Jindal**.
+Welcome to GameVerse Portal — a gaming-themed website created to bring players together to explore games, track progress, and learn more about the project.
+This site is built as part of the SNW Capstone Project under the mentorship of Ajay Sharma, developed by Arnav Jindal.
 
----
+🌟 Project Overview
 
-## 🌟 Project Overview
+GameVerse Portal is a simple and engaging platform inspired by modern gaming interfaces.
+The website is designed to offer:
 
-**GameVerse Portal** is a creative web platform inspired by the world of gaming.  
-The goal of this project is to build a **unique and interactive game hub** that allows users to:
-- Discover fun mini-games 🎯  
-- Learn about the project creators 💡  
-- Connect and share experiences 📞  
-- Log in or sign up for personalized interaction 🔐  
+Access to mini-games 🎯
 
-This website showcases the use of **HTML**, **CSS**, and (in Phase 2) **JavaScript** for interactivity and game logic.
+A leaderboard section for scores 🏆
 
----
+A clean About page with project details 💡
 
-## 🧱 Project Structure
+A contact form for communication 📬
 
-| File | Description |
-|------|--------------|
-| `index.html` | Home page – introduction and navigation hub |
-| `games.html` | Collection of fun and simple JavaScript games |
-| `about.html` | Details about the GameVerse Portal and creators |
-| `contact.html` | Contact form to connect with the developers |
-| `style.css` | Central stylesheet defining the site’s futuristic neon look |
-| `images/` | Contains project images, icons, and assets |
+Login and Signup entry points 🔐
 
----
+The project currently uses HTML and CSS, with JavaScript planned for the next phase to add interactivity and game logic.
 
-## 🧩 Features
+🧱 Project Structure
+File	Description
+index.html	Homepage with welcome message and navigation
+games.html	Page listing available mini-games
+leaderboard.html	Placeholder for future score tracking
+about.html	Details about the project and creator
+contact.html	Contact form for user messages
+style.css	Main stylesheet for the neon gaming theme
+images/	Logos, icons, and assets
+🧩 Features
 
-✅ Futuristic **GameVerse-themed UI**  
-✅ **Responsive design** for desktop and mobile  
-✅ **Neon glowing elements** for visual appeal  
-✅ **Navigation bar** linking all pages  
-✅ **Login & Signup** page placeholders  
-✅ (Upcoming) **Interactive JavaScript games**  
-✅ (Upcoming) **User authentication & leaderboard**
+✅ Neon-themed gaming UI
+✅ Fully responsive design for all devices
+✅ Smooth navigation bar across pages
+✅ Clean homepage CTA (Login / Signup)
+✅ Structured pages: Games, Leaderboard, About, Contact
+🔧 Upcoming: JavaScript-powered mini-games
+🔐 Upcoming: Login, Signup, & working Leaderboard
 
----
+⚙️ Tech Stack
 
-## ⚙️ Tech Stack
+HTML5 → Page structure
 
-- **HTML5** → Structure  
-- **CSS3** → Styling, animations, neon effects  
-- **JavaScript (Phase 2)** → Interactivity and gameplay logic  
-- *(Optional Future Tech)*: Firebase / LocalStorage for user data
+CSS3 → Styling, effects, responsiveness
 
----
+JavaScript (Phase 2) → Gameplay, user system
 
-## 📅 Project Phases
+(Future Options) → LocalStorage / Firebase for user data
 
-### 🧩 Phase 1 — Static Website (HTML + CSS)
-- Create all web pages and design layout.
-- Apply CSS for styling and responsiveness.
-- Ensure navigation and structure work smoothly.
+📅 Project Phases
+🧩 Phase 1 — Static Website (HTML + CSS)
 
-✅ **Status:** Completed  
-📅 **Submission:** Mid Evaluation (2nd week of November)
+Designed the full layout
 
----
+Built all pages
 
-### ⚡ Phase 2 — Dynamic Website (HTML + CSS + JS)
-- Integrate JavaScript for game interactivity and login/signup functionality.
-- Add animations, effects, and responsive improvements.
+Applied responsive and neon styling
 
-🔄 **Status:** Upcoming  
-📅 **Submission:** Final Evaluation (1st week of December)
+✅ Status: Completed
 
----
+⚡ Phase 2 — Dynamic Functionality (HTML + CSS + JS)
 
-## 👨‍💻 Developer
+Add playable JavaScript mini-games
 
-**Name:** Arnav Jindal  
-**Email:** arnav.j25651@nst.rishihood.edu.in  
-**Institution:** Rishihood University  
-**Mentor:** Ajay Sharma Sir
+Implement user login/signup
 
----
+Activate leaderboard with score tracking
 
-## 🌐 Live Demo (optional)
-> *(Add link after deployment — e.g., GitHub Pages or Netlify)*  
-Example: [https://arnavjindal.github.io/gameverse-portal/](#)
+🔄 Status: In Progress
 
----
+👨‍💻 Developer
 
-## 🏆 Credits
+Name: Arnav Jindal**
+Email: arnav.j25651@nst.rishihood.edu.in
 
-- Concept & Design: **Arnav Jindal**  
-- Mentor Guidance: **Ajay Sharma Sir**  
-- Reference Inspiration: [Minecraft Official Website](https://www.minecraft.net/en-us)
+Institution: Rishihood University
+Mentor: Ajay Sharma
 
----
+🌐 Live Demo
 
-## 📜 License
-This project is developed for **educational purposes only** as part of the SNW Capstone Project.  
-All assets and design concepts belong to their respective owners.
+🔗 https://arnavjindal2008.github.io/gameverse-portal/
 
----
+🏆 Credits
+
+Concept & Development: Arnav Jindal
+
+Guidance & Supervision: Ajay Sharma
+
+UI inspiration from modern gaming platforms
+
+📜 License
+
+This project is created for educational purposes under the SNW Capstone Project.
+All external assets belong to their respective owners.
