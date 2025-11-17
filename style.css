@@ -595,3 +595,32 @@ footer {
   font-size: 0.9rem;
   text-shadow: 0 0 8px #00e0ff;
 }
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media screen and (max-width: 450px){
+  .contact-container,.games-grid{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-info,.contact-form,.game-card{
+    margin-bottom: 40px;
+    max-width: fit-content;
+    min-width: fit-content;
+    max-height: fit-content;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+
+  .game-card{
+  max-width: 300px;
+  min-width: 300px;
+  box-sizing: border-box;
+  }
+}
