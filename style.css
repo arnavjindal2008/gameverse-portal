@@ -1,0 +1,597 @@
+/* ===========================================
+   🎮 GAMEVERSE PORTAL - STYLE.CSS
+   Designed by Arnav Jindal
+   =========================================== */
+
+/* ===== Global Settings ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #050510;
+  color: #e0e0e0;
+}
+
+a {
+  text-decoration: none;
+  color:#00E0FF
+}
+
+/* ===========================================
+   HEADER & NAVBAR
+   =========================================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: rgba(10, 10, 20, 0.85);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #00e0ff;
+  text-shadow: 0 0 12px #00e0ff;
+  margin-bottom: 10px;
+}
+
+.logo span {
+  color: #fff;
+}
+
+ .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.navbar a {
+  margin-left: 25px;
+  color: #bbb;
+  font-weight: 500;
+  margin: 8px;
+}
+
+.navbar a:hover,.navbar a.active {
+  color: #00e0ff;
+  text-shadow: 0 0 10px #00e0ff;
+}
+
+#sub{
+  font-size: 20px;
+  gap: 20px;
+}
+
+/* ===== Login / Signup Section ===== */
+
+.auth-page {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 50px 40px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 242, 0.25);
+  backdrop-filter: blur(8px);
+  color: #aaa;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.auth-container h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: #00e0ff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 12px #00e0ff;
+}
+
+.auth-btn {
+  margin-top: 30px;
+  background: #00e0ff;
+  color: #0a0a0f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #00e0ff;
+}
+
+.auth-btn:hover {
+  background: transparent;
+  color: #00e0ff;
+  box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
+}
+
+.auth-btn.secondary {
+  background: transparent;
+  color: #00e0ff;
+  box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.auth-form label {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+}
+
+.auth-form input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #00e0ff;
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.auth-form input:focus {
+  border-color: #00e0ff;
+  box-shadow: 0 0 12px #00e0ff;
+}
+
+.alt-link{
+  color: white;
+  text-align: center;
+}
+
+/* ===========================================
+   HERO SECTION (Home Page)
+   =========================================== */
+
+.hero {
+  background: linear-gradient(135deg, #000, #001a33);
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 20px #00e0ff;
+  font-size: 2rem;
+}
+
+.hero h1 span {
+  color: #00e0ff;
+}
+
+.hero p {
+  color: #b0b0b0;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.auth-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle at center, #0d0d0d, #050505);
+  color: #fff;
+}
+
+.auth-section h2 {
+  font-size: 2.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00eaff;
+  text-shadow: 0 0 15px #00eaff;
+}
+
+.auth-section p {
+  color: #aaa;
+  margin: 15px 0 40px;
+  font-size: 1.1rem;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: #00e0ff;
+  color: #0a0a0f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #00e0ff;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #00e0ff;
+  box-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
+}
+
+/* ===========================================
+   GAMES PAGE
+   =========================================== */
+
+.games-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.games-section h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00e0ff;
+  text-shadow: 0 0 20px #00e0ff;
+  margin-bottom: 40px;
+}
+
+.games-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px
+}
+
+.game-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 280px;
+  min-width: 280px;
+  max-height: 600px;
+  min-height: 600px;
+}
+
+.game-card:hover {
+  box-shadow: 0 0 25px #00e0ff;
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  min-height: 185px;
+  max-height: 185px;
+  box-sizing: border-box;
+}
+
+.games-section h2{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00e0ff;
+}
+
+.games-section h3{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00e0ff;
+}
+
+.page-hero{
+    text-align: center;
+}
+
+.hero-content h1{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00e0ff;
+}
+
+.btn-small {
+  background: #00e0ff;
+  color: #0a0a0f;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.btn-small:hover {
+  background: transparent;
+  color: #00e0ff;
+  box-shadow: 0 0 15px #00e0ff;
+}
+
+/* ===========================================
+ LEADERBOARD
+=========================================== */
+
+.leaderboard-section {
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  background: radial-gradient(circle at center, #050505 0%, #000 100%);
+}
+
+.leaderboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 242, 0.25);
+}
+
+.leaderboard-section h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: #00e0ff;
+  text-shadow: 0 0 15px #00e0ff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.leaderboard-table th,.leaderboard-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.leaderboard-table th {
+  color: #00e0ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.leaderboard-table tr:hover {
+  background: rgba(0, 255, 242, 0.1);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #00e0ff;
+}
+
+/* ===========================================
+   ABOUT PAGE
+   =========================================== */
+
+.about-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.about-section h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00e0ff;
+}
+
+.about-section p {
+  max-width: 850px;
+  margin: auto;
+  color: #bbb;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.creator-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.creator-section h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00e0ff;
+}
+
+.creator-section p {
+  max-width: 850px;
+  margin: auto;
+  color: #bbb;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+
+.page-hero-about-hero {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.page-hero-about-hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00e0ff;
+}
+
+.page-hero-about-hero p {
+  max-width: 850px;
+  margin: auto;
+  color: #bbb;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.creator-section h2{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00e0ff;  
+}
+
+.about-text h2{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00e0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00e0ff;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.arnav img{
+  height: 150px;
+  width: 150px;
+}
+
+/* ===========================================
+   CONTACT PAGE
+   =========================================== */
+
+.contact-hero {
+  background: linear-gradient(120deg, #001f3f, #000);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e0ff;
+  font-size: 2.8rem;
+  text-shadow: 0 0 20px #00e0ff;
+}
+
+.contact-hero h1 span {
+  color: #fff;
+}
+
+.contact-hero p {
+  color: #aaa;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.contact-section {
+  padding: 80px 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info, .contact-form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  max-height: 460px;
+  min-height: 460px;
+  min-width: 350px;
+  max-width: 350px;
+}
+
+.contact-info h2,.contact-form h2 {
+  color: #00e0ff;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #bbb;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.contact-info .note {
+  color: #00e0ff;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.contact-form input,.contact-form textarea {
+  width: 100%;
+  background: #0a0a0f;
+  border: 1px solid #00e0ff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.contact-form input::placeholder,.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form button {
+  width: 100%;
+}
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #000;
+  border-top: 1px solid rgba(0, 255, 255, 0.25);
+  color: #999;
+  font-size: 0.9rem;
+  text-shadow: 0 0 8px #00e0ff;
+}
