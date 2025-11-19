@@ -32,7 +32,7 @@ header {
   align-items: center;
   padding: 18px 50px;
   background: rgba(10, 10, 20, 0.85);
-  border-bottom: 1px solid rgba(0, 255, 255, 0.25);
+  border-bottom: 1px solid #00e0ff;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -254,12 +254,11 @@ header {
 }
 
 .games-grid{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(4,280px);
   justify-content: center;
   align-items: center;
-  gap: 50px
+  gap: 60px
 }
 
 .game-card {
@@ -267,8 +266,6 @@ header {
   border: 1px solid rgba(0, 255, 255, 0.2);
   border-radius: 15px;
   padding: 20px;
-  max-width: 280px;
-  min-width: 280px;
   max-height: 600px;
   min-height: 600px;
 }
@@ -394,6 +391,14 @@ header {
   border: 2px solid #00e0ff;
 }
 
+#note{
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.subnavbar{
+  background-color: #000;
+}
 /* ===========================================
    ABOUT PAGE
    =========================================== */
@@ -591,11 +596,12 @@ header {
 footer {
   text-align: center;
   padding: 25px;
-  background: #000;
-  border-top: 1px solid rgba(0, 255, 255, 0.25);
+  background: rgba(10, 10, 20, 0.85);
+  border-top: 1px solid #00e0ff;
   color: #999;
-  font-size: 0.9rem;
-  text-shadow: 0 0 8px #00e0ff;
+  font-size: 1.4rem;
+  position: sticky;
+  bottom: 0;
 }
 
 /* ===========================================
@@ -624,5 +630,13 @@ footer {
   max-width: 300px;
   min-width: 300px;
   box-sizing: border-box;
+  }
+
+  .game-card p,.game-card br,.game-card h3{
+    display: none;
+  }
+
+  footer{
+    font-size: 10px;
   }
 }
