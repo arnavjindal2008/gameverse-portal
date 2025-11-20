@@ -650,4 +650,8 @@ footer {
   footer{
     font-size: 10px;
   }
+
+  .main{
+    margin-top: 50px;
+  }
 }
