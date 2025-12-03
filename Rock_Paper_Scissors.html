@@ -19,6 +19,10 @@
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <!-- ===== HAMBURGER ICON ===== -->
+    <nav class="hambar">
+      <p id="hamicon">☰</p>
+    </nav>
   </header>
 <!-- ===== SUBNAVBAR ===== -->
  <section class="subnavbar">
@@ -79,5 +83,25 @@
   <footer>
     <p>© 2025 <strong>GameVerse Portal</strong> | Designed by <strong>Arnav Jindal</strong> | Capstone Project Inspired By <strong>Minecraft.com</strong></p>
   </footer>
+<!-- ===== JavaScript ===== -->
+<script>
+  let hamicon = document.getElementById("hamicon");
+  let navbar = document.getElementsByClassName("navbar")[0]
+
+  hamicon.addEventListener("click",tap)
+
+  function tap() {
+      if (window.innerWidth <= 450) {
+
+          if (navbar.style.display === "none") {
+              navbar.style.display = "flex";
+              navbar.style.flexDirection = "column";
+          } else {
+              navbar.style.display = "none";
+          }
+
+      }
+  };
+</script>
 </body>
 </html>

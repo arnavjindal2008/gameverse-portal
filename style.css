@@ -57,6 +57,11 @@ header {
     justify-content: center;
   }
 
+ .hambar {
+    display: none;
+    font-size: 30px;
+  }
+
 .navbar a {
   margin-left: 25px;
   color: #bbb;
@@ -160,6 +165,11 @@ header {
 
 .alt-link{
   color: white;
+  text-align: center;
+}
+
+#error{
+  color: red;
   text-align: center;
 }
 
@@ -653,5 +663,13 @@ footer {
 
   .main{
     margin-top: 50px;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .hambar{
+    display: inline-block;
   }
 }

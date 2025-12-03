@@ -19,6 +19,10 @@
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <!-- ===== HAMBURGER ICON ===== -->
+    <nav class="hambar">
+      <p id="hamicon">☰</p>
+    </nav>
   </header>
 <!-- ===== SIGNUP SECTION ===== -->
   <section class="auth-page">
@@ -47,6 +51,7 @@
           <input type="password" id="confirm" placeholder="Confirm your password" required>
         </div>
         <button type="submit" class="btn auth-btn">Sign Up</button>
+        <p id="error"></p>
         <p class="alt-link">
           Already have an account? <a href="login.html">Login here</a>
         </p>
@@ -57,5 +62,60 @@
   <footer>
     <p>© 2025 <strong>GameVerse Portal</strong> | Designed by <strong>Arnav Jindal</strong> | Capstone Project Inspired By <strong>Minecraft.com</strong></p>
   </footer>
+<!-- ===== JavaScript ===== -->
+  <script>
+    const button = document.querySelector("button");
+
+    button.addEventListener("click",login);
+
+    function login() {
+      event.preventDefault()
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirmpassword = document.getElementById("confirm").value;
+      const para  = document.getElementById("error")
+      const name = document.getElementById("name").value;
+
+      if (name === "") {
+        para.innerHTML = "Enter your Name First"
+      }
+      else if (email === "") {
+        para.innerHTML = "Enter your Email First"
+      }
+      else if (password === "") {
+        para.innerHTML = "Enter the Password First"
+      }
+      else if (!email.endsWith("@nst.rishihood.edu.in")) {
+        para.innerHTML = "Enter a valid Institutional Email"
+      }
+      else if (!password.includes("@") && !password.includes("$")) {
+        para.innerHTML = "Enter a valid password conatining @ or $"
+      }
+      else if (password !== confirmpassword) {
+        para.innerHTML = "Enter the same Passwords"
+      }
+      else {
+        para.innerHTML = "Signup Successful"
+      }
+    }
+
+  let hamicon = document.getElementById("hamicon");
+  let navbar = document.getElementsByClassName("navbar")[0]
+
+  hamicon.addEventListener("click",tap)
+
+  function tap() {
+      if (window.innerWidth <= 450) {
+
+          if (navbar.style.display === "none") {
+              navbar.style.display = "flex";
+              navbar.style.flexDirection = "column";
+          } else {
+              navbar.style.display = "none";
+          }
+
+      }
+  };
+  </script>
 </body>
 </html>
