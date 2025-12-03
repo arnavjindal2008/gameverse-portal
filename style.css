@@ -171,7 +171,7 @@ header {
   background: linear-gradient(135deg, #000, #001a33);
   padding: 120px 20px;
   text-align: center;
-  background-image: url("background.jpeg");
+  background-image: url("Images/background.jpeg");
   background-size: cover;
   height: 660px;
 }
