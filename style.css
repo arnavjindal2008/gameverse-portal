@@ -173,6 +173,11 @@ header {
   text-align: center;
 }
 
+#error1{
+  color: green;
+  text-align: center;
+}
+
 /* ===========================================
    HERO SECTION (Home Page)
    =========================================== */

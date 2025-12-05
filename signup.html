@@ -35,8 +35,9 @@
           <br>
           <input type="password" id="confirm" placeholder="Confirm your password" required>
         </div>
-        <button type="submit" class="btn auth-btn">Sign Up</button>
+        <button type="submit" class="btn auth-btn" id="button">Sign Up</button>
         <p id="error"></p>
+        <p id="error1"></p>
         <p class="alt-link">
           Already have an account? <a href="login.html">Login here</a>
         </p>
@@ -49,58 +50,76 @@
   </footer>
 <!-- ===== JavaScript ===== -->
   <script>
-    const button = document.querySelector("button");
+  const button = document.getElementById("button");
+  const error = document.getElementById("error");
+  const error1 = document.getElementById("error1");
+  
+  let database = JSON.parse(localStorage.getItem("data")) || [];
 
-    button.addEventListener("click",login);
+  button.addEventListener("click", Signup);
 
-    function login() {
-      event.preventDefault()
+  function Signup(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
       const confirmpassword = document.getElementById("confirm").value;
-      const para  = document.getElementById("error")
-      const name = document.getElementById("name").value;
 
-      if (name === "") {
-        para.innerHTML = "Enter your Name First"
-      }
-      else if (email === "") {
-        para.innerHTML = "Enter your Email First"
-      }
-      else if (password === "") {
-        para.innerHTML = "Enter the Password First"
-      }
-      else if (!email.endsWith("@nst.rishihood.edu.in")) {
-        para.innerHTML = "Enter a valid Institutional Email"
-      }
-      else if (!password.includes("@") && !password.includes("$")) {
-        para.innerHTML = "Enter a valid password conatining @ or $"
-      }
-      else if (password !== confirmpassword) {
-        para.innerHTML = "Enter the same Passwords"
-      }
-      else {
-        para.innerHTML = "Signup Successful"
-      }
-    }
+      if (name === "") 
+          return showError("Enter your Name First");
 
-  let hamicon = document.getElementById("hamicon");
-  let navbar = document.getElementsByClassName("navbar")[0]
+      if (email === "")
+          return showError("Enter your Email First");
 
-  hamicon.addEventListener("click",tap)
+      if (!email.endsWith("@nst.rishihood.edu.in"))
+          return showError("Enter a valid Institutional Email");
 
-  function tap() {
-      if (window.innerWidth <= 450) {
+      if (password === "")
+          return showError("Enter the Password First");
 
-          if (navbar.style.display === "none") {
-              navbar.style.display = "flex";
-              navbar.style.flexDirection = "column";
-          } else {
-              navbar.style.display = "none";
+      if (!password.includes("@") && !password.includes("$"))
+          return showError("Password must contain @ or $");
+
+      if (password !== confirmpassword)
+          return showError("Passwords do not match");
+
+      // CHECKING DATABASE FOR ALREADY EXISTS DATA OF USER
+
+      for (let i = 0; i < database.length; i++) {
+          if (database[i].mail === email) {
+              return showError("Account Already Exists");
           }
-
       }
-  };
-  </script>
+
+      const userdata = {
+          fullName: name,
+          mail: email,
+          pass: password
+      };
+
+      database.push(userdata);
+      localStorage.setItem("data", JSON.stringify(database));
+
+      return showError("Signup Successful");
+  }
+
+  function showError(msg) {
+      error.innerText = msg;
+      clearFields()
+  }
+
+  function showError(msg) {
+      error1.innerText = msg;
+      window.location.href = "login.html"
+  }
+
+  function clearFields() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("password").value = "";
+      document.getElementById("confirm").value = "";
+  }
+</script>
 </body>
 </html>
