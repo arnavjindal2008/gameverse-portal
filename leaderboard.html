@@ -12,6 +12,7 @@
 <!-- ===== HEADER / NAVBAR ===== -->
   <header>
     <div class="logo">🎮 <span>GameVerse</span></div>
+    <div id="theme">Switch to Theme 2</div>
     <nav class="navbar">
       <a href="home.html">Home</a>
       <a href="games.html">Games</a>
@@ -39,6 +40,7 @@
     <p id="note">Note: Gamewise Leaderboard for rest of the games will come soon....</p>
   </section>
 <!-- ===== LEADERBOARD SECTION ===== -->
+  <div class="search"><input id="search" placeholder="Enter Name to Search"></div>
   <section class="leaderboard-section">
     <div class="leaderboard-container">
       <h2 class="neon-text">🏆 GameVerse Leaderboard</h2>
@@ -104,6 +106,42 @@
 
       }
   };
+// <!-- ===== Theme Changer ===== -->
+  const btn = document.getElementById("theme");
+  const head = document.getElementsByTagName("header")[0];
+  const footer = document.getElementsByTagName("footer")[0];
+  btn.addEventListener("click",changecolor);
+
+  function changecolor() {
+    head.classList.toggle("theme2header");
+    footer.classList.toggle("theme2footer");
+
+    if (btn.innerText == "Switch to Theme 2") {
+      btn.innerText = "Switch to Theme 1"
+    }
+    else {
+      btn.innerText = "Switch to Theme 2"
+    }
+  }
+// <!-- ===== Search ===== -->
+const rows = document.querySelectorAll("tbody tr");
+const input = document.getElementById("search");
+
+input.addEventListener("keyup", check);
+
+function check() {
+  let text = input.value.toLowerCase();
+
+  rows.forEach(row => {
+    let playerName = row.children[1].innerText.toLowerCase();
+
+    if (playerName.includes(text)) {
+      row.style.display = "";
+    } else {
+      row.style.display = "none";
+    }
+  });
+};
 </script>
 </body>
 </html>

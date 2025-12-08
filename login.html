@@ -64,24 +64,24 @@
         }
       }
       return showError("Invalid Credentials");
-  }
+  };
 
   function showError(msg) {
       error.innerText = msg;
       clearFields()
-  }
+  };
 
   function showError1(msg) {
       error1.innerText = msg;
       window.location.href = "home.html"
-  }
+  };
 
   function clearFields() {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("password").value = "";
       document.getElementById("confirm").value = "";
-  }
+  };
 </script>
 </body>
 </html>

@@ -24,7 +24,9 @@ a {
 
 #logout{
   background-color: red;
+  color: white;
   border-radius: 15px;
+  text-align: center;
   padding: 6px;
   margin-top: 0px;
   margin-right: 0px;
@@ -44,6 +46,27 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+#theme{
+  background-color: green;
+  border-radius: 10px;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.theme2header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: blue;
+  border-bottom: 1px solid red;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  opacity: 0.85;
 }
 
 .logo {
@@ -429,10 +452,28 @@ header {
 #note{
   text-align: center;
   font-size: 1.4rem;
+  background-color: #000;
 }
 
 .subnavbar{
   background-color: #000;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  background-color: #000;
+}
+
+#search{
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #000;
+  outline: 2px solid #00e0ff;
+  box-shadow:  0 0 15px #00e0ff;
+  color: white;
 }
 /* ===========================================
    ABOUT PAGE
@@ -639,6 +680,18 @@ footer {
   bottom: 0;
 }
 
+.theme2footer {
+  text-align: center;
+  padding: 25px;
+  background: blue;
+  border-top: 1px solid red;
+  color: white;
+  font-size: 1.2rem;
+  position: sticky;
+  bottom: 0;
+  opacity: 0.85;
+}
+
 /* ===========================================
    RESPONSIVE DESIGN
    =========================================== */
@@ -675,6 +728,10 @@ footer {
     font-size: 10px;
   }
 
+  .theme2footer{
+    font-size: 10px;
+  }
+
   .main{
     margin-top: 50px;
   }
@@ -685,5 +742,17 @@ footer {
 
   .hambar{
     display: inline-block;
+  }
+
+  #theme{
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 8px;
+  }
+
+  .hero{
+  background-image: url("Images/mobile.jpeg");
+  background-size: cover;
   }
 }

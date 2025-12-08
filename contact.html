@@ -12,6 +12,7 @@
 <!-- ====== Header ====== -->
   <header>
     <div class="logo">🎮 <span>GameVerse</span></div>
+    <div id="theme">Switch to Theme 2</div>
     <nav class="navbar">
       <a href="home.html">Home</a>
       <a href="games.html">Games</a>
@@ -81,6 +82,23 @@
           }
 
       }
+  };
+  // <!-- ===== Theme Changer ===== -->
+  const btn = document.getElementById("theme");
+  const head = document.getElementsByTagName("header")[0];
+  const footer = document.getElementsByTagName("footer")[0];
+  btn.addEventListener("click",changecolor);
+
+  function changecolor() {
+    head.classList.toggle("theme2header");
+    footer.classList.toggle("theme2footer");
+
+    if (btn.innerText == "Switch to Theme 2") {
+      btn.innerText = "Switch to Theme 1"
+    }
+    else {
+      btn.innerText = "Switch to Theme 2"
+    }
   };
 </script>
 </body>
