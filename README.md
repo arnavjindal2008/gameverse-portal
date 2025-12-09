@@ -80,7 +80,7 @@ Mentor: Ajay Sharma
 
 🌐 Live Demo
 
-🔗 https://arnavjindal2008.github.io/gameverse-portal/
+🔗 https://arnavjindal2008.github.io/gameverse-portal/Index%20Page/index.html
 
 🏆 Credits
 
