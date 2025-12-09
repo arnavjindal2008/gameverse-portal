@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard | GameVerse Portal</title>
+  <link rel="stylesheet" href="../Style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../Images/gameverse-portal.png" />
+</head>
+<body>
+<!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <div class="logo">🎮 <span>GameVerse</span></div>
+    <div id="theme">Switch to Theme 2</div>
+    <nav class="navbar">
+      <a href="../Home Page/home.html">Home</a>
+      <a href="../Games Page/games.html">Games</a>
+      <a href="../Leaderboard Page/leaderboard.html"  class="active">Leaderboard</a>
+      <a href="../About Page/about.html">About</a>
+      <a href="../Contact Page/contact.html">Contact</a>
+      <a id="logout" href="../Index Page/index.html">Logout</a>
+    </nav>
+    <!-- ===== HAMBURGER ICON ===== -->
+    <nav class="hambar">
+      <p id="hamicon">☰</p>
+    </nav>
+  </header>
+<!-- ===== SUBNAVBAR ===== -->
+ <section class="subnavbar">
+  <br>
+  <nav class="navbar" id="sub">
+      <a href="../Overall Laederboard Page/overall.html">Overall</a>
+      <a href="../Guess The Number Page/Guess_the_Number.html"  class="active">Guess the Number</a>
+      <a href="../Rock Paper Scissor Game/Rock_Paper_Scissors.html">Rock Paper Scissors</a>
+      <a href="../Tic Tac Toe Page/Tic_Tac_Toe.html">Tic Tac Toe</a>
+    </nav>
+    <br>
+    <br>
+    <p id="note">Note: Gamewise Leaderboard for rest of the games will come soon....</p>
+  </section>
+<!-- ===== LEADERBOARD SECTION ===== -->
+  <section class="leaderboard-section">
+    <div class="leaderboard-container">
+      <h2 class="neon-text">🏆 Guess the Number Leaderboard</h2>
+      <table class="leaderboard-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="../Images/avatar1.jpg" alt="Player 1" class="avatar"> Arnav</td>
+            <td>9800</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="../Images/avatar4.jpg" alt="Player 4" class="avatar"> Shaurya</td>
+            <td>9450</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="../Images/avatar3.jpg" alt="Player 3" class="avatar"> Aryan</td>
+            <td>8800</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><img src="../Images/avatar2.jpg" alt="Player 2" class="avatar"> Kishan</td>
+            <td>8200</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><img src="../Images/avatar5.jpg" alt="Player 5" class="avatar"> Aditya</td>
+            <td>7950</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+<!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 <strong>GameVerse Portal</strong> | Designed by <strong>Arnav Jindal</strong></p>
+  </footer>
+<!-- ===== JavaScript ===== -->
+<script src="Guess_the_Number.js"></script>
+</body>
+</html>

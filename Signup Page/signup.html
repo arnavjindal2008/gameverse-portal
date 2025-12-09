@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | GameVerse Portal</title>
+  <link rel="stylesheet" href="../Style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../Images/gameverse-portal.png" />
+</head>
+<body>
+<!-- ===== SIGNUP SECTION ===== -->
+  <section class="auth-page">
+    <div class="auth-container">
+      <h2>Join the GameVerse!</h2>
+      <p class="subtitle">Create your account and begin your adventure 🚀</p>
+      <form class="auth-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <br>
+          <input type="text" id="name" placeholder="Enter your full name" required>
+          <br>
+          <br>
+          <label for="email">Email:</label>
+          <br>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <br>
+          <br>
+          <label for="password">Password:</label>
+          <br>
+          <input type="password" id="password" placeholder="Create a password" required>
+          <br>
+          <br>
+          <label for="confirm">Confirm Password</label>
+          <br>
+          <input type="password" id="confirm" placeholder="Confirm your password" required>
+        </div>
+        <button type="submit" class="btn auth-btn" id="button">Sign Up</button>
+        <p id="error"></p>
+        <p id="error1"></p>
+        <p class="alt-link">
+          Already have an account? <a href="../Login Page/login.html">Login here</a>
+        </p>
+      </form>
+    </div>
+  </section>
+<!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 <strong>GameVerse Portal</strong> | Designed by <strong>Arnav Jindal</strong></p>
+  </footer>
+<!-- ===== JavaScript ===== -->
+<script src="signup.js"></script>
+</body>
+</html>
