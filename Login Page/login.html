@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | GameVerse Portal</title>
+  <link rel="stylesheet" href="../Style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../Images/gameverse-portal.png" />
+</head>
+<body>
+<!-- ===== LOGIN SECTION ===== -->
+  <section class="auth-page">
+    <div class="auth-container">
+      <h2>Welcome Back, Gamer!</h2>
+      <p class="subtitle">Login to continue your GameVerse journey 🚀</p>
+      <form class="auth-form" action="#" method="post">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <br>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <br>
+          <br>
+          <label for="password">Password:</label>
+          <br>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn auth-btn" id="button">Login</button>
+        <p id="error"></p>
+        <p id="error1"></p>
+        <p class="alt-link">
+          Don't have an account? <a href="../Signup Page/signup.html">Sign up here</a>
+        </p>
+      </form>
+    </div>
+  </section>
+<!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 <strong>GameVerse Portal</strong> | Designed by <strong>Arnav Jindal</strong></p>
+  </footer>
+<!-- ===== JavaScript ===== -->
+<script src="login.js"></script>
+</body>
+</html>

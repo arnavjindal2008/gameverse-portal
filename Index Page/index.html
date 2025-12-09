@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GameVerse Portal</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../Style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="gameverse-portal.png">
+  <link rel="icon" href="../Images/gameverse-portal.png">
 </head>
 <body>
 <!-- ===== FEATURE SECTION ===== -->
@@ -14,8 +14,8 @@
     <h2>Join GameVerse</h2>
     <p>Login to continue your adventure or create a new account to begin your journey!</p>
     <div class="auth-buttons">
-      <a href="login.html" class="btn auth-btn">Login</a>
-      <a href="signup.html" class="btn auth-btn">Sign Up</a>
+      <a href="../Login Page/login.html" class="btn auth-btn">Login</a>
+      <a href="../Signup Page/signup.html" class="btn auth-btn">Sign Up</a>
     </div>
   </section>
 <!-- ===== FOOTER ===== -->
@@ -23,24 +23,6 @@
     <p>© 2025 <strong>GameVerse Portal</strong> | Designed by <strong>Arnav Jindal</strong></p>
   </footer>
 <!-- ===== JavaScript ===== -->
-<script>
-  let hamicon = document.getElementById("hamicon");
-  let navbar = document.getElementsByClassName("navbar")[0]
-
-  hamicon.addEventListener("click",tap)
-
-  function tap() {
-      if (window.innerWidth <= 450) {
-
-          if (navbar.style.display === "none") {
-              navbar.style.display = "flex";
-              navbar.style.flexDirection = "column";
-          } else {
-              navbar.style.display = "none";
-          }
-
-      }
-  };
-</script>
+<script src="index.js"></script>
 </body>
 </html>
