@@ -79,6 +79,7 @@ Institution: Rishihood University
 Mentor: Ajay Sharma
 
 🌐 Live Demo :- https://arnavjindal2008.github.io/gameverse-portal/
+
 🏆 Credits
 
 Concept & Development: Arnav Jindal
