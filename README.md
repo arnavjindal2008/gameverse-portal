@@ -78,10 +78,7 @@ Email: arnav.j25651@nst.rishihood.edu.in
 Institution: Rishihood University
 Mentor: Ajay Sharma
 
-🌐 Live Demo
-
-🔗 https://arnavjindal2008.github.io/gameverse-portal/Index%20Page/index.html
-
+🌐 Live Demo :- https://arnavjindal2008.github.io/gameverse-portal/
 🏆 Credits
 
 Concept & Development: Arnav Jindal
